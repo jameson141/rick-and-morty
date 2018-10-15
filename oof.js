@@ -13,10 +13,13 @@ document.getElementById('stuff').addEventListener('click', ()=> {
 
 function nameSearch(response) {
     oofed.innerHTML = response.data.results
-    .map(function(indivCharacter) { // ooga booga, make theis a function 
+    .map(function(indivCharacter) {
         return `
           <img src="${indivCharacter.image}">
           <h1> Name: ${indivCharacter.name}</h1>
+          <h1> Species: ${indivCharacter.species}</h1>
+          <h1> Origin Name : ${indivCharacter.origin.name}</h1>
+          <h1> Status : ${indivCharacter.status}</h1>
         `;
     })
     .join('');
