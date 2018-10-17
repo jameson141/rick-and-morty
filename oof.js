@@ -3,7 +3,7 @@ var oofed = document.getElementById('result')
 
 
 document.getElementById('stuff').addEventListener('click', ()=> {  
-    var name =document.getElementById('tim').value
+    var name =document.getElementById('doot').value
     console.log('string')
     
     axios.get(`https://rickandmortyapi.com/api/character/?name=${name}`)
